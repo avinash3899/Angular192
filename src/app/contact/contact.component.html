@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+</head>
+
+<body>
+
+    <form action="">
+        <table>
+            <tr>
+                <td>Email</td>
+                <td><input type="email" name="email" id="email"></td>
+            </tr>
+            <tr>
+                <td>Mobile</td>
+                <td><input type="tel" name="mobile" id="mobile"></td>
+            </tr>
+            <tr>
+                <td colspan="2">Address</td>
+            </tr>
+            <tr>
+                <td>Street</td>
+                <td><input type="text" name="street" id="street"></td>
+            </tr>
+            <tr>
+                <td>City</td>
+                <td><input type="text" name="city" id="city"></td>
+            </tr>
+            <tr>
+                <td>State</td>
+                <td><input type="text" name="state" id="state"></td>
+            </tr>
+            <tr>
+                <td>Country</td>
+                <td><input type="text" name="country" id="country"></td>
+            </tr>
+            <tr>
+                <td>PIN</td>
+                <td><input type="text" name="pin" id="pin"></td>
+            </tr>
+            <tr>
+                <td>Message</td>
+                <td><textarea name="message" id="message" cols="30" rows="10"></textarea></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Submit"></td>
+            </tr>
+        </table>
+    </form>
+
+    <!-- <div>
+        <p>Mail: {{contact_mail}}</p>
+        <p>Mobile: {{contact_number}}</p>
+
+        <p><Button (click)="toggleAddress()">{{showContact ? "Hide Contact" : "show Contact"}}</Button></p>
+
+        <div *ngIf="showContact">
+            {{contact_address.street}}<br>
+            {{contact_address.city}}<br>
+            {{contact_address.state}}<br>
+            {{contact_address.country}}<br>
+            {{contact_address.pin}}
+        </div>
+    </div> -->
+</body>
+
+</html>
