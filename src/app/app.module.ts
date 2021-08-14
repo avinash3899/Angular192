@@ -8,12 +8,14 @@ import { RegisterComponent } from './register/register.component';
 import { ContactComponent } from './contact/contact.component';
 import { FeedbackComponent } from './feedback/feedback.component';
 import { RouterModule, Routes } from '@angular/router';
+import { HomeComponent } from './home/home.component';
 
 const appRoutes: Routes = [
   {path:'Login', component: LoginComponent},
   {path:'Register', component: RegisterComponent},
   {path:'Feedback', component: FeedbackComponent},
-  {path:'Contact', component: ContactComponent}
+  {path:'Contact', component: ContactComponent},
+  {path:'Home', component: HomeComponent}
 ];
 
 @NgModule({
@@ -22,7 +24,8 @@ const appRoutes: Routes = [
     LoginComponent,
     RegisterComponent,
     ContactComponent,
-    FeedbackComponent
+    FeedbackComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

@@ -1,9 +1,15 @@
-  MENU 
-  <ul>
-  <li><a [routerLink]="['/Login']">Login</a></li>
-  <li><a [routerLink]="['/Register']">Register</a></li>
-  <li><a [routerLink]="['/Feedback']">Feedback</a></li>
-  <li><a [routerLink]="['/Contact']">ContactUs</a></li>
-  </ul>
-  <hr><hr>
-  <router-outlet></router-outlet>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" [routerLink]="['/Home']">Angular192</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li routerLinkActive="active"><a [routerLink]="['/Register']">Register</a></li>
+      <li routerLinkActive="active"><a [routerLink]="['/Contact']">Contact</a></li>
+      <li routerLinkActive="active"><a [routerLink]="['/Feedback']">Feedback</a></li>
+      <li routerLinkActive="active"><a [routerLink]="['/Login']">Login</a></li>
+    </ul>
+  </div>
+</nav>
+  
+<router-outlet></router-outlet>
